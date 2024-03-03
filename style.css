@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: white;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(img/library-book-bookshelf-read.jpg) no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+
+.container{
+    width: 100%;
+    height: 75px;
+    padding:30px 10%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: brown;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.content{
+    position: static;
+    margin: 50px;
+    top: 150px; 
+    right: 300px; 
+    color:chocolate; 
+    padding: 10px 20px; 
+    font-size: 180%; 
+    text-align: center;
+}
+
+.content-img img{
+    height: 20%;
+    max-width: 20%;
+    top: 350px;
+    left: 40px;
+    position: absolute;
+    display: flex;
+    border-radius: 50%;
+}
+
+aside {
+    position: absolute;
+    right: -10px;
+    top: 400px;
+    margin: 10px;
+    width: 2%;
+  }
+
+aside ul li{
+    background: brown;
+    display: block;
+    max-width: 100px;
+    height: 50%;
+    line-height: 40px;
+}
+
+.searchbar{
+    top: -50px;
+    right: 150px;
+    position: relative;
+    width: 300px;
+    margin: 300px auto;
+}
+
+.searchbar input{
+    position: absolute;
+    width: 206%;
+    height: 105%;
+}
+
+.searchbar .btn {
+    position: relative;
+    transform: scale(1.5);
+    left: 208%;
+    width: 10px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+footer{
+    background: brown;
+    font-size: 20px;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+    .content{
+        font-size: 20px;
+        top: 90px;
+        right: 150px;
+    }
+
+    .content-img img{
+        height: 20%;
+        max-width: 30%;
+        top: 600px;
+        left: 150px;
+        position: absolute;
+        border-radius: 0%;
+    }
+
+    nav li{
+        display: inline-block;
+        list-style: none;
+        padding: 5px 5px;
+    }
+
+    aside {
+        position: absolute;
+        right: -10px;
+        top: 65px;
+        margin: 10px;
+        width: 7%;
+      }
+    
+    aside ul li{
+        background: brown;
+        display: block;
+        max-width: 100px;
+        height: 50%;
+        line-height: 40px;
+    }
+
+    .searchbar{
+        top: -150px;
+        right: 50px;
+        position: relative;
+        width: 300px;
+        margin: 300px auto;
+    }
+    
+    .searchbar input{
+        position: absolute;
+        width: 125%;
+        height: 100%;
+    }
+    
+    .searchbar .btn {
+        position: relative;
+        transform: scale(1.5);
+        left: 120%;
+        width: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    body{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background: url(img/library-book-bookshelf-read.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .content{
+        font-size: 17px;
+        bottom: 100px;
+        left: 150px;
+    }
+
+    .content-img img{
+        height: 20%;
+        max-width: 30%;
+        top: 500px;
+        left: 150px;
+        position: absolute;
+        border-radius: 0%;
+    }
+
+    nav li{
+        display: inline-block;
+        list-style: none;
+        padding: 5px 5px;
+    }
+
+    aside {
+        position: absolute;
+        right: -10px;
+        top: 65px;
+        margin: 10px;
+        width: 7%;
+      }
+    
+    aside ul li{
+        background: brown;
+        display: block;
+        max-width: 100px;
+        height: 50%;
+        line-height: 40px;
+    }
+
+    .searchbar{
+        top: -205px;
+        right: 50px;
+        position: relative;
+        width: 250px;
+        margin: 300px auto;
+    }
+    
+    .searchbar input{
+        position: absolute;
+        width: 125%;
+        height: 100%;
+    }
+    
+    .searchbar .btn {
+        position: relative;
+        transform: scale(1.5);
+        left: 126%;
+        width: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer{
+        background: brown;
+        font-size: 20px;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+        
+}
